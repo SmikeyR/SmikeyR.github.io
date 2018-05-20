@@ -188,7 +188,7 @@ function pause(){
   clearTimeout(counter);
 }
 
-function loadRandomPattern(){
+function loadRandomPattern(board1){
   var patMatrix = [];
   for (let i=0; i<board1.height; i++){
    patMatrix.push([]);
@@ -211,6 +211,6 @@ function test() {
 
 function runLife() {
   var board1 = new Board(cellSize, x, y);
-  loadRandomPattern();
+  loadRandomPattern(board1);
   play();
 }
