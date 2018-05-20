@@ -208,7 +208,8 @@ function test() {
   var a = board1.liveNeigbours(4, 5);
   console.log(a);
 }
-window.onload = function {
+
+function runLife() {
   var board1 = new Board(cellSize, x, y);
   loadRandomPattern();
   play();
