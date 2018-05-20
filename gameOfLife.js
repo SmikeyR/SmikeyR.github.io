@@ -180,19 +180,19 @@ function loadPattern() {
   updateBoard(board1, patMatrix);
 }
 
-var counter;
-function play(){
-  counter = setTimeout(function(){run(board1); play()}, 1000);
-}
-function pause(){
-  clearTimeout(counter);
-}
+// var counter;
+// function play(){
+//   counter = setTimeout(function(){run(board); play()}, 1000);
+// }
+// function pause(){
+//   clearTimeout(counter);
+// }
 
-function loadRandomPattern(board1){
+function loadRandomPattern(board){
   var patMatrix = [];
-  for (let i=0; i<board1.height; i++){
+  for (let i=0; i<board.height; i++){
    patMatrix.push([]);
-   for (let j=0; j<board1.width; j++){
+   for (let j=0; j<board.width; j++){
      if (Math.random()>0.5) {
        patMatrix[i].push(emptyCellColor());
      }
@@ -201,7 +201,7 @@ function loadRandomPattern(board1){
      }
    }
   }
-  updateBoard(board1, patMatrix);
+  updateBoard(board, patMatrix);
 }
 
 function test() {
@@ -212,5 +212,9 @@ function test() {
 function runLife() {
   var board1 = new Board(cellSize, x, y);
   loadRandomPattern(board1);
-  play();
+  var counter;
+  function play(board){
+    counter = setTimeout(function(){run(board); play(board)}, 1000);
+  }
+  play(board1);
 }
