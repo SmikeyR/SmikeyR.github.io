@@ -1,11 +1,11 @@
-body {}
+body {
+  background-color: #3c568e;
+}
 
 #Navbar {
   background-color: #3a1e5c;
   height: 40px;
 }
-
-
 
 .btn-info {
   background-color: #3a1e5c;
@@ -156,10 +156,22 @@ a.button-link:hover {
   background-color: #3a1e5c;
 }
 
-div {
-  //border: 1px solid red;
-}
-
 #spacer {
   border: 1px solid #ba7eff;
+}
+/*the background game of lfe */
+.board {
+  position: absolute;
+  opacity: 0.4;
+  filter: alpha(opacity=40); /* For IE8 and earlier */
+  border: solid 1px;
+/*   padding: 3px; */
+  background-color: lightgray;
+  z-index: -1;
+}
+
+.cell {
+  border: none;
+  display: block;
+  float: left;
 }
