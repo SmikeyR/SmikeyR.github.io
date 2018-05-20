@@ -151,7 +151,7 @@ var set = setBoardSize(cellSize), //(cellSize, x, y) x and y board size in # of 
     x = set[0],
     y = set[1];
 
-var board1 = new Board(cellSize, x, y);
+//var board1 = new Board(cellSize, x, y);
 
 function loadPattern() {
   var patMatrix = [];
@@ -182,7 +182,7 @@ function loadPattern() {
 
 var counter;
 function play(){
-  counter = setTimeout(function(){run(board1); play()}, 1000); 
+  counter = setTimeout(function(){run(board1); play()}, 1000);
 }
 function pause(){
   clearTimeout(counter);
@@ -208,5 +208,8 @@ function test() {
   var a = board1.liveNeigbours(4, 5);
   console.log(a);
 }
-loadRandomPattern();
-play();
+window.onload = function {
+  var board1 = new Board(cellSize, x, y);
+  loadRandomPattern();
+  play();
+}
