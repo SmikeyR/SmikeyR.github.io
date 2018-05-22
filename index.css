@@ -1,177 +1,95 @@
 body {
   background-color: #3c568e;
 }
-
 #Navbar {
   background-color: #3a1e5c;
   height: 40px;
 }
-
 .btn-info {
   background-color: #3a1e5c;
   margin-top: 3px;
 }
-
-#Name {
-  width: 170px;
-}
-
-/* #main {
-  background-color: #ba7eff;
-} */
-
-#Home {
+.main-div {
   text-align: center;
   margin: auto;
   height: 100vh;
-  padding: 5px;
+  padding: 50px 10px 10px 10px;
 }
-
-#header {
+#home-header {
   font-size: 60px;
   color: white;
   margin-top: 25vh;
   text-shadow: -1px 0 #3a1e5c, 0 3px #3a1e5c, 3px 0 #3a1e5c, 0 -1px #3a1e5c;
 }
-
-#sub-header {
+#home-sub-header {
   color: #3a1e5c;
 }
-
-#contact-buttons {
+/* #contact-buttons {
   margin-left: 25%;
   margin-right: 25%;
-}
-
-#About {
-  margin: auto;
-  height: 100vh;
-  width: 120vh;
-  padding: 5px;
-}
-
-#about-header {
+} */
+.secondary-header {
   margin-top: 15vh;
-  color: #3a1e5c;
+  color: white;
   margin-left: 3vh;
   font-family: Anton, Monospace;
 }
-
-#about-text {
+.general-text {
   color: #3a1e5c;
   font-size: 20px;
-  margin-left: 3vh;
 }
-
-#about-photo {
-  margin-top: 15vh;
-  border-radius: 50%;
-  margin-left: 15vh;
-  max-width: 50%;
-  height: auto;
-}
-
-#projects {
-  margin: auto;
-  height: 100vh;
-  width: 120vh;
-  padding: 5px;
-}
-
-#projects-header-cont {
-  text-align: center;
-  margin-top: 5vh;
-  color: #3a1e5c;
-}
-
-#projects-header {
-  font-family: Anton;
-  font-size: 50px;
-  color: white;
-  text-shadow: -1px 0 #3a1e5c, 0 3px #3a1e5c, 3px 0 #3a1e5c, 0 -1px #3a1e5c;
-}
-
-#project-image {
-  width: 28vh;
-  height: 28vh;
-  border-radius: 10px;
-}
-
-#project-image:hover {
-  opacity: 0.8;
-  border: 3px solid #3a1e5c;
-  border-radius: 10px;
-}
-
-#project-images-firstrow {
-  margin-top: 5vh;
-}
-
-#project-images-secondrow {
-  margin-top: 5vh;
-}
-
 #Contact {
   margin: auto;
   height: 90vh;
   width: 120vh;
   padding: 5px;
 }
-
 #contact-header {
   margin-top: 20vh;
-  color: #3a1e5c;
+  color: white;
   font-family: Anton, Monospace;
 }
-
 #contact-mail {
   color: #3a1e5c;
 }
-
 #contact-buttons-two {
   margin-top: 20vh;
 }
-
-#Page-links {}
-
 .link {
   border-left: thick solid #3a1e5c;
   padding-right: 5px;
   padding-left: 2px;
   font-size: 18px;
 }
-
 a.button-link:hover {
   text-decoration: none;
 }
-
 .btn-container {
   padding-top: 8px;
   padding-right: 5px;
   padding-bottom: 8px;
   padding-left: 5px;
 }
-
 .btn-primary:hover {
   background-color: #3a1e5c;
 }
-
 #spacer {
-  border: 1px solid #ba7eff;
+  border: 1px solid #3c568e;
 }
 /*the background game of lfe */
 .board {
   position: absolute;
-  opacity: 0.4;
-  filter: alpha(opacity=40); /* For IE8 and earlier */
-  border: solid 1px;
-/*   padding: 3px; */
+  opacity: 0.3;
+  filter: alpha(opacity=30);
   background-color: lightgray;
   z-index: -1;
 }
-
 .cell {
   border: none;
   display: block;
   float: left;
 }
+
+/* div {
+  border: 1px solid red;
+} */
