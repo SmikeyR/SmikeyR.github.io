@@ -1,12 +1,12 @@
 body {
-  background-color: #3c568e;
+  background-color: #3c568e !important;
 }
 #Navbar {
   background-color: #3a1e5c;
   height: 40px;
 }
-.btn {
-  background-color: #3a1e5c;
+.btn-info {
+  background-color: #3a1e5c !important;
   margin-top: 3px;
 }
 .main-div {
