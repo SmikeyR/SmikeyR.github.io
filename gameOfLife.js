@@ -169,8 +169,8 @@ function test() {
 }
 
 function runLife() {
-    var cellSize = 5;
-    var set = setBoardSize(cellSize, 50, 30), //(cellSize, x, y) x and y board size in # of cells.
+    var cellSize = 20;
+    var set = setBoardSize(cellSize), //(cellSize, x, y) x and y board size in # of cells.
     x = set[0],
     y = set[1];
 
@@ -178,7 +178,7 @@ function runLife() {
   loadRandomPattern(board1);
   var counter;
   function play(board){
-    counter = setTimeout(function(){run(board); play(board)}, 3000);
+    counter = setTimeout(function(){run(board); play(board)}, 2000);
   }
   play(board1);
 }

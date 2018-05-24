@@ -88,6 +88,7 @@ a.button-link:hover {
   border: none;
   display: block;
   float: left;
+  border-radius: 50%;
 }
 
 /* div {
