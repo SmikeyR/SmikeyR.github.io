@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="gameOfLife.js"></script>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet" type="text/css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <body onload="runLife()">
+
+  <div class="navbar-fixed-top" id="Navbar">
+    <div class="container-fluid">
+      <div class="col-xs-3">
+        <a class="button-link" href="/index.html">
+          <button class="btn btn-info" id="Language">English</button>
+        </a>
+      </div>
+      <div class="col-xs-9">
+        <div class="col-xs-2">
+
+        </div>
+        <div class="col-xs-2">
+          <a class="button-link" href="#Home">
+            <button class="btn btn-block btn-info">בית</button>
+          </a>
+        </div>
+        <div class="col-xs-2">
+          <a class="button-link" href="#About">
+            <button class="btn btn-block btn-info">אודות</button>
+          </a>
+        </div>
+        <div class="col-xs-2">
+          <a class="button-link" href="#Services">
+            <button class="btn btn-block btn-info">שרותים</button>
+          </a>
+        </div>
+        <div class="col-xs-2">
+          <a class="button-link" href="#Careers">
+            <button class="btn btn-block btn-info">משרות</button>
+          </a>
+        </div>
+        <div class="col-xs-2">
+          <a class="button-link" href="#Contact">
+            <button class="btn btn-block btn-info">צור קשר</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid, main-div" id="Home">
+      <div class="container-fluid">
+        <div class="col-xs-12">
+          <h1 style="font-family: Anton" id="home-header">CVCOM</h1>
+        </div>
+        <div class="col-xs-12">
+          <h2 id="home-sub-header">Sub header</h2>
+        </div>
+        <div class="col-xs-12">
+          <hr id="separator">
+        </div>
+      </div>
+  </div>
+
+  <div class="container-fluid, main-div" id="About">
+     <div class="col-sm-12">
+       <h2 class="secondary-header" id="about-header">CVCOM</h2>
+       <p class="general-text" id="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+     </div>
+  </div>
+
+  <div class="container-fluid, main-div" id="Services">
+     <div class="col-sm-12">
+       <h2 class="secondary-header" id="services-header">Services</h2>
+       <p class="general-text" id="services-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+     </div>
+  </div>
+
+  <div class="container-fluid, main-div" id="Careers">
+     <div class="col-sm-12">
+       <h2 class="secondary-header" id="careers-header">Careers</h2>
+       <p class="general-text" id="careers-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+     </div>
+  </div>
+
+  <div class="container-fluid, main-div" id="Contact">
+    <div class="col-sm-6">
+      <h2 id="contact-header">Contact us</h2>
+      <h2 id="contact-mail">some email</h2>
+    </div>
+    <div id="spacer" class="col-sm-3">
+    </div>
+    <div class="col-sm-3" id="contact-buttons-two">
+      <div class="btn-container">
+        <a target=" _blank" class="button-link" href="#">
+          <button class="btn btn-block btn-primary">contact 1</button>
+        </a>
+      </div>
+      <div class="btn-container">
+        <a target=" _blank" class="button-link" href="#">
+          <button class="btn btn-block btn-primary">contact 2</button>
+        </a>
+      </div>
+      <div class="btn-container">
+        <a target=" _blank" class="button-link" href="#">
+          <button class="btn btn-block btn-primary">contact 3</button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid" id="Page-links">
+    <a class="link" href="#Home">בית</a>
+    <a class="link" href="#About">אודות</a>
+    <a class="link" href="#Services">שרותים</a>
+    <a class="link" href="#Careers">משרות</a>
+    <a class="link" href="#Contact">צור קשר</a>
+  </div>
+
+  <div class="container-fluid" id="copyright">
+    <p> Copyright (c)</p>
+  </div>
+</body>
+</html>

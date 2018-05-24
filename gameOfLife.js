@@ -3,8 +3,9 @@ function Board(cellSize, x, y) {
   this.height = y;
   //draw a table
   var brd = document.createElement("div");
-  brd.style.width = x*cellSize + "px";
-  brd.style.height = y*cellSize + "px";
+  brd.style.border = "1px";
+  brd.style.width = cellSize*x + "px"; //border and padding should be added
+  brd.style.height = cellSize*y + "px";
   brd.className = "board";
   brd.style.top = "0px";
   brd.style.left = "0px";
@@ -146,48 +147,6 @@ function updateBoard(board, matrix) { //sets colors on the board by given matrix
 
 ///Main///
 
-var cellSize = 20;
-var set = setBoardSize(cellSize), //(cellSize, x, y) x and y board size in # of cells.
-    x = set[0],
-    y = set[1];
-
-//var board1 = new Board(cellSize, x, y);
-
-function loadPattern() {
-  var patMatrix = [];
-   for (let i=0; i<board1.height; i++){
-    patMatrix.push([]);
-    for (let j=0; j<board1.width; j++){
-      patMatrix[i].push(emptyCellColor());
-    }
-   }
-  //line
-  patMatrix[7][1] = randomColor();
-  patMatrix[7][2] = randomColor();
-  patMatrix[7][3] = randomColor();
-  //glider
-  patMatrix[4][4] = randomColor();
-  patMatrix[4][5] = randomColor();
-  patMatrix[4][6] = randomColor();
-  patMatrix[3][6] = randomColor();
-  patMatrix[2][5] = randomColor();
-  //someshit
-  patMatrix[3][13] = randomColor();
-  patMatrix[3][14] = randomColor();
-  patMatrix[3][15] = randomColor();
-  patMatrix[2][14] = randomColor();
-  patMatrix[4][14] = randomColor();
-  updateBoard(board1, patMatrix);
-}
-
-// var counter;
-// function play(){
-//   counter = setTimeout(function(){run(board); play()}, 1000);
-// }
-// function pause(){
-//   clearTimeout(counter);
-// }
-
 function loadRandomPattern(board){
   var patMatrix = [];
   for (let i=0; i<board.height; i++){
@@ -210,11 +169,16 @@ function test() {
 }
 
 function runLife() {
+    var cellSize = 5;
+    var set = setBoardSize(cellSize, 50, 30), //(cellSize, x, y) x and y board size in # of cells.
+    x = set[0],
+    y = set[1];
+
   var board1 = new Board(cellSize, x, y);
   loadRandomPattern(board1);
   var counter;
   function play(board){
-    counter = setTimeout(function(){run(board); play(board)}, 1000);
+    counter = setTimeout(function(){run(board); play(board)}, 3000);
   }
   play(board1);
 }
